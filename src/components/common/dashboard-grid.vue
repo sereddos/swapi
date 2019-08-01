@@ -12,7 +12,7 @@
           </div>
           <div v-if="this.showSearchLink">
             <router-link :to="{path: `/search-result/${this.searchBox}`, params: {index: this.searchBox}}">
-              Ссылка на результаты поиска
+              Ссылка на результаты поиска d
             </router-link>
           </div>
         </div>
