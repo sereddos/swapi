@@ -22,7 +22,7 @@
     data () {
       return {
         list: [],
-        restUrl: 'https://swapi.co/api/starships/',
+        restUrl: 'https://swapi.dev/api/starships/',
       }
     },
     computed: {

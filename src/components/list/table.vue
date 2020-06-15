@@ -57,7 +57,7 @@ export default {
     DashboardGrid: () => import('@/components/common/dashboard-grid.vue')
   },
   data: () => ({
-    url: 'https://swapi.co/api/starships/'
+    url: 'https://swapi.dev/api/starships/'
   }),
   methods: {
     getPath (pathIndex) {

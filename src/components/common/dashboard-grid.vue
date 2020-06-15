@@ -72,7 +72,7 @@ export default {
       restUrl: this.url,
       restSearchIndex: this.searchIndex,
       searchBox: '',
-      searchUrl: 'https://swapi.co/api/starships/?search='
+      searchUrl: 'https://swapi.dev/api/starships/?search='
     }
   },
   methods: {

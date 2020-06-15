@@ -24,7 +24,7 @@ export default {
   data () {
     return {
       list: [],
-      restUrl: 'https://swapi.co/api/starships/?search=',
+      restUrl: 'https://swapi.dev/api/starships/?search=',
     }
   },
   computed: {
