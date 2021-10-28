@@ -2,22 +2,14 @@
   <dashboard-grid :url="url">
     <tr slot="header">
       <th>Имя</th>
-      <th>Модель</th>
-      <th>Производитель</th>
-      <th>Стоимость в кредит</th>
-      <th>Длина</th>
-      <th>Макс. скорость</th>
-      <th>Экипаж</th>
-      <th>Пассажиры</th>
-      <th>Грузоподьемность</th>
-      <th>Расходные</th>
-      <th>Рейтинг гипердрайва</th>
-      <th>MGLT</th>
-      <th>Класс</th>
-      <th>Пилоты</th>
-      <th>Фильмы</th>
-      <th>Дата создания</th>
-      <th>Дата изминения</th>
+      <th>Рост</th>
+      <th>Вес</th>
+      <th>Цвет волос</th>
+      <th>Цвет кожи</th>
+      <th>Цвет глаз</th>
+      <th>Год рождения</th>
+      <th>Пол</th>
+      <th>Фото</th>
     </tr>
     <template slot="row" slot-scope="props">
       <td>
@@ -25,22 +17,16 @@
           {{ props.name }}
         </router-link>
       </td>
-      <td>{{ props.model }}</td>
-      <td>{{ props.manufacturer }}</td>
-      <td>{{ props.cost_in_credits }}</td>
-      <td>{{ props.length }}</td>
-      <td>{{ props.max_atmosphering_speed }}</td>
-      <td>{{ props.crew }}</td>
-      <td>{{ props.passengers }}</td>
-      <td>{{ props.cargo_capacity }}</td>
-      <td>{{ props.consumables }}</td>
-      <td>{{ props.hyperdrive_rating }}</td>
-      <td>{{ props.MGLT }}</td>
-      <td>{{ props.starship_class }}</td>
-      <td>{{ props.pilots.length }}</td>
-      <td>{{ props.films.length }}</td>
-      <td>{{ props.created }}</td>
-      <td>{{ props.edited }}</td>
+      <td>{{ props.height }}</td>
+      <td>{{ props.mass }}</td>
+      <td>{{ props.hair_color }}</td>
+      <td>{{ props.skin_color }}</td>
+      <td>{{ props.eye_color }}</td>
+      <td>{{ props.birth_year }}</td>
+      <td>{{ props.gender }}</td>
+      <td>
+        <img :src="getPhoto(props.photo)">
+      </td>
     </template>
   </dashboard-grid>
 </template>
@@ -62,6 +48,9 @@ export default {
   methods: {
     getPath (pathIndex) {
       return `/starships/${pathIndex}`;
+    },
+    getPhoto (name) {
+      return `@/assets/img/photo/${name}.jpg`;
     }
   }
 };

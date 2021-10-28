@@ -2,7 +2,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <div class="row">
-        <div class="col-lg-6">Корабли в базе</div>
+        <div class="col-lg-6">Поиск участников</div>
         <div class="col-lg-6">
           <div class="input-group">
             <input type="text" class="form-control" v-model="searchBox">
@@ -78,7 +78,7 @@ export default {
   methods: {
     loadData() {
       this.loading = true;
-
+      this.restUrl = 'https://raw.githubusercontent.com/sereddos/swapi/master/src/assets/people.json';
       fetch(this.restUrl)
         .then(response => response.json())
         .then(data => {
@@ -86,6 +86,7 @@ export default {
           this.loading = false;
           this.showSearchLink = this.searchBox !== '';
         });
+      console.log(this.list.results);
     },
     getIndex (link) {
       return link.slice(1, -1).split('/').pop();

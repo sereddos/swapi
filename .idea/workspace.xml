@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18b23964-2f1c-46af-9352-59dcc1986d04" name="Default" comment="">
+    <list default="true" id="18b23964-2f1c-46af-9352-59dcc1986d04" name="Default" comment="test api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/people.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/people.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/common/dashboard-grid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/dashboard-grid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/list/table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/list/table.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,8 +264,16 @@
       <updated>1563817879452</updated>
       <workItem from="1563817881735" duration="39157000" />
       <workItem from="1635339901413" duration="349000" />
-      <workItem from="1635358093341" duration="1026000" />
+      <workItem from="1635358093341" duration="4670000" />
     </task>
+    <task id="LOCAL-00001" summary="test api">
+      <created>1635362444766</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635362444766</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -317,6 +328,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test api" />
+    <option name="LAST_COMMIT_MESSAGE" value="test api" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/prod.env.js">
