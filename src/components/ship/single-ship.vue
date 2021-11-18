@@ -1,7 +1,7 @@
 <template>
   <div class="panel panel-default">
     <div class="panel-heading">
-      Корабль <strong>{{this.list.name}}</strong>
+      Персонаж <strong>{{this.list.name}}</strong>
     </div>
     <div class="panel-body">
       <ul class="list-group">
@@ -22,7 +22,7 @@
     data () {
       return {
         list: [],
-        restUrl: 'https://swapi.dev/api/starships/',
+        restUrl: 'https://swapi.dev/api/people/',
       }
     },
     computed: {

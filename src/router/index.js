@@ -11,7 +11,7 @@ export default new Router({
   mode: 'history',
   routes: [
     { path: '/', component: table },
-    { path: '/starships/:id', component: singleShip, props: true },
+    { path: '/people/:id', component: singleShip, props: true },
     { path: '/search-result/:id', component: searchList, props: true }
   ],
 });

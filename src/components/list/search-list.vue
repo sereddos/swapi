@@ -24,7 +24,7 @@ export default {
   data () {
     return {
       list: [],
-      restUrl: 'https://swapi.dev/api/starships/?search=',
+      restUrl: 'https://swapi.dev/api/people/?search=',
     }
   },
   computed: {
@@ -45,7 +45,7 @@ export default {
     },
     getPath (url) {
       const index = this.getIndex(url);
-      return `/starships/${index}`;
+      return `/people/${index}`;
     },
     getIndex (link) {
       return link.slice(1, -1).split('/').pop();

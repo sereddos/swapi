@@ -7,7 +7,7 @@
           <ul class="nav navbar-nav">
             <router-link tag="li" to="/" active-class="active" exact>
               <a>
-                Список кораблей
+                Герои звездной саги
               </a>
             </router-link>
           </ul>

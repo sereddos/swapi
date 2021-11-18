@@ -2,7 +2,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <div class="row">
-        <div class="col-lg-6">Корабли в базе</div>
+        <div class="col-lg-6">База героев</div>
         <div class="col-lg-6">
           <div class="input-group">
             <input type="text" class="form-control" v-model="searchBox">
@@ -12,7 +12,7 @@
           </div>
           <div v-if="this.showSearchLink">
             <router-link :to="{path: `/search-result/${this.searchBox}`, params: {index: this.searchBox}}">
-              Ссылка на результаты поиска d
+              Ссылка на результаты поиска
             </router-link>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default {
       restUrl: this.url,
       restSearchIndex: this.searchIndex,
       searchBox: '',
-      searchUrl: 'https://swapi.dev/api/starships/?search='
+      searchUrl: 'https://swapi.dev/api/people/?search='
     }
   },
   methods: {
